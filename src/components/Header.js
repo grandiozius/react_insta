@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
 import logo from "../logo.svg";
 
 export default class Header extends Component {
@@ -6,20 +7,20 @@ export default class Header extends Component {
         return (
             <header>
                 <div className="container h-flex">
-                    <a href="#" className="logo">
+                    <Link to="/" className="logo">
                         <img alt="logo" src={logo}></img>
-                    </a>
+                    </Link>
                     <nav className="links">
                         <ul>
                             <li>
-                                <a href="#" className="menu__links">
+                                <Link to="/" className="menu__links">
                                     Posts
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="menu__links">
+                                <Link to="/profile" className="menu__links">
                                     Profile
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </nav>
